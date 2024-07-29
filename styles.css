@@ -94,7 +94,7 @@ body
 {
 	color:#c2a2da
 }
-.death {
+.morte {
     color: #ff0000
 }
 .yellow
@@ -105,7 +105,7 @@ body
 {
 	color:#ffec8b
 }
-.grey
+.baixo
 {
 	color:#bbb
 }
@@ -122,7 +122,7 @@ body
 	color:#3a3
 }
 
-.money
+.dinheiro
 {
     color: #008000
 }
@@ -131,13 +131,9 @@ body
 {
 	color:#ffec8b
 }
-.megafon
+.celular
 {
 	color:#e7e700
-}
-
-.whisper {
-    color: #eda841
 }
 
 .carwhisper {

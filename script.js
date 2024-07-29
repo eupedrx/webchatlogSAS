@@ -16,38 +16,25 @@ $(document).ready(function () {
     (txtString = $(this).text()),
 
 		navigator.userAgent.indexOf("Chrome") != -1 && $(this).append(" ⠀"),
-	  // Global
+  
+  
+    // SAS
 		txtString.toLowerCase().indexOf("*") >= 0 && $(this).addClass("me"),
 		txtString.toLowerCase().indexOf(">") >= 0 && $(this).addClass("me"),
+      
+        txtString.toLowerCase().indexOf(" says:") >= 0 && $(this).addClass("white"),
+		txtString.toLowerCase().indexOf("[baixo] ") >= 0 && $(this).addClass("baixo"),
 
-	  // English
-	  txtString.toLowerCase().indexOf(" says:") >= 0 && $(this).addClass("white"),
-		txtString.toLowerCase().indexOf(" says [low]:") >= 0 && $(this).addClass("grey"),
+		txtString.toLowerCase().indexOf("você pagou ") >= 0 && $(this).addClass("dinheiro"),
+		txtString.toLowerCase().indexOf("você recebeu ") >= 0 && $(this).addClass("dinheiro"),
+		txtString.toLowerCase().indexOf("você deu") >= 0 && $(this).addClass("dinheiro"),
+		txtString.toLowerCase().indexOf("pagou a você ") >= 0 && $(this).addClass("dinheiro"),
 
-		txtString.toLowerCase().indexOf("you paid $") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("you received") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("you gave") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("paid you $") >= 0 && $(this).addClass("money"),
-
-		txtString.toLowerCase().indexOf("you can die") >= 0 && $(this).addClass("death"),
-		txtString.toLowerCase().indexOf(" whispers:") >= 0 && $(this).addClass("whisper"),
-		txtString.toLowerCase().indexOf(" whispers:") >= 0 && txtString.toLowerCase().indexOf("(car)") >= 0 && $(this).addClass("carwhisper"),
-		txtString.toLowerCase().indexOf(" (cellphone)") >= 0 && $(this).addClass("megafon"),
-
-        // SAS
-
-        txtString.toLowerCase().indexOf(" diz:") >= 0 && $(this).addClass("white"),
-		txtString.toLowerCase().indexOf("[baixo] ") >= 0 && $(this).addClass("grey"),
-
-		txtString.toLowerCase().indexOf("você pagou ") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("você recebeu ") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("você deu") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("pagou a você ") >= 0 && $(this).addClass("money"),
-
-		txtString.toLowerCase().indexOf("character kill ") >= 0 && $(this).addClass("death"),
-		txtString.toLowerCase().indexOf("sussurro de ") >= 0 && $(this).addClass("megafon"),
-    txtString.toLowerCase().indexOf("sussurro para ") >= 0 && $(this).addClass("megafon"),
-		txtString.toLowerCase().indexOf(" diz (telefone)") >= 0 && $(this).addClass("megafon"),
+		txtString.toLowerCase().indexOf("character kill ") >= 0 && $(this).addClass("morte"),
+		txtString.toLowerCase().indexOf("sussurro de ") >= 0 && $(this).addClass("celular"),
+    txtString.toLowerCase().indexOf("sussurro para ") >= 0 && $(this).addClass("celular"),
+		txtString.toLowerCase().indexOf(" diz (telefone)") >= 0 && $(this).addClass("celular"),
+    txtString.toLowerCase().indexOf("[sms]:") >= 0 && $(this).addClass("celular"),
 
 		$(this).textContent += "‎  ",
         //REMOVE
