@@ -36,33 +36,18 @@ $(document).ready(function () {
 
         // SAS
 
-        txtString.toLowerCase().indexOf("says:") >= 0 && $(this).addClass("white"),
+        txtString.toLowerCase().indexOf(" says:") >= 0 && $(this).addClass("white"),
 		txtString.toLowerCase().indexOf("[baixo] ") >= 0 && $(this).addClass("grey"),
 
 		txtString.toLowerCase().indexOf("you paid $") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("you received") >= 0 && $(this).addClass("money"),
+		txtString.toLowerCase().indexOf("you received $") >= 0 && $(this).addClass("money"),
 		txtString.toLowerCase().indexOf("you gave") >= 0 && $(this).addClass("money"),
 		txtString.toLowerCase().indexOf("paid you $") >= 0 && $(this).addClass("money"),
 
 		txtString.toLowerCase().indexOf("you can die") >= 0 && $(this).addClass("death"),
-		txtString.toLowerCase().indexOf("Sussurou para:") >= 0 && $(this).addClass("whisper"),
+		txtString.toLowerCase().indexOf("sussurro ") >= 0 && $(this).addClass("megafon"),
 		txtString.toLowerCase().indexOf(" whispers:") >= 0 && txtString.toLowerCase().indexOf("(car)") >= 0 && $(this).addClass("carwhisper"),
 		txtString.toLowerCase().indexOf(" (cellphone)") >= 0 && $(this).addClass("megafon"),
-
-	  // French
-	    txtString.toLowerCase().indexOf(" dit:") >= 0 && $(this).addClass("white"),
-		txtString.toLowerCase().indexOf(" dit [bas]:") >= 0 && $(this).addClass("grey"),
-
-		txtString.toLowerCase().indexOf("vous payez $") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("tu reçois") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("tu donnes") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("vous a payé $") >= 0 && $(this).addClass("money"),
-
-		txtString.toLowerCase().indexOf("de voiture, le véhicule a été détruit") >= 0 && $(this).addClass("money"),
-		txtString.toLowerCase().indexOf("vous pourrez mourir dans") >= 0 && $(this).addClass("death"),
-		txtString.toLowerCase().indexOf(" chuchote:") >= 0 && $(this).addClass("megafon"),
-		txtString.toLowerCase().indexOf(" (chuchote)") >= 0 && $(this).addClass("megafon"),
-		txtString.toLowerCase().indexOf(" (téléphone)") >= 0 && $(this).addClass("megafon"),
 
 		$(this).textContent += "‎  ",
         //REMOVE
