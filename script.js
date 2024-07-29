@@ -34,6 +34,21 @@ $(document).ready(function () {
 		txtString.toLowerCase().indexOf(" whispers:") >= 0 && txtString.toLowerCase().indexOf("(car)") >= 0 && $(this).addClass("carwhisper"),
 		txtString.toLowerCase().indexOf(" (cellphone)") >= 0 && $(this).addClass("megafon"),
 
+        // SAS
+
+        txtString.toLowerCase().indexOf(" diz:") >= 0 && $(this).addClass("white"),
+		txtString.toLowerCase().indexOf(" [baixo]:") >= 0 && $(this).addClass("grey"),
+
+		txtString.toLowerCase().indexOf("you paid $") >= 0 && $(this).addClass("money"),
+		txtString.toLowerCase().indexOf("you received") >= 0 && $(this).addClass("money"),
+		txtString.toLowerCase().indexOf("you gave") >= 0 && $(this).addClass("money"),
+		txtString.toLowerCase().indexOf("paid you $") >= 0 && $(this).addClass("money"),
+
+		txtString.toLowerCase().indexOf("you can die") >= 0 && $(this).addClass("death"),
+		txtString.toLowerCase().indexOf(" whispers:") >= 0 && $(this).addClass("whisper"),
+		txtString.toLowerCase().indexOf(" whispers:") >= 0 && txtString.toLowerCase().indexOf("(car)") >= 0 && $(this).addClass("carwhisper"),
+		txtString.toLowerCase().indexOf(" (cellphone)") >= 0 && $(this).addClass("megafon"),
+
 	  // French
 	    txtString.toLowerCase().indexOf(" dit:") >= 0 && $(this).addClass("white"),
 		txtString.toLowerCase().indexOf(" dit [bas]:") >= 0 && $(this).addClass("grey"),
