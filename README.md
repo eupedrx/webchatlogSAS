@@ -8,10 +8,10 @@ Aplicativo Web desenvolvido com intuito de ajudar os jogadores a conseguirem man
 
 2- Você vai abrir o .txt (bloco de notas) do seu log e simplesmente copiar e colar tudo aquilo que você quer.
 
-
 3- Aproveite o chatlog ;)!
 
 
 ## 📚 O quê foi utilizado?
 
 Apenas Javascript, CSS e HTMl. (obvio que possuí bibliotecas como bootstrap, jQuery, FileSave e DOMtoImage)
+Créditos: [GTAW Chatlog](https://chatlog.gta.world/)
