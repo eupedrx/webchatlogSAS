@@ -21,6 +21,7 @@ $(document).ready(function () {
     // SAS
 		txtString.toLowerCase().indexOf("*") >= 0 && $(this).addClass("me"),
 		txtString.toLowerCase().indexOf(">") >= 0 && $(this).addClass("me"),
+    txtString.toLowerCase().indexOf("**") >= 0 && $(this).addClass("celular"),
       
         txtString.toLowerCase().indexOf(" says:") >= 0 && $(this).addClass("white"),
 		txtString.toLowerCase().indexOf("[baixo] ") >= 0 && $(this).addClass("baixo"),
