@@ -14,4 +14,3 @@ Aplicativo Web desenvolvido com intuito de ajudar os jogadores a conseguirem man
 ## 📚 O quê foi utilizado?
 
 Apenas Javascript, CSS e HTMl. (obvio que possuí bibliotecas como bootstrap, jQuery, FileSave e DOMtoImage)
-Créditos: [GTAW Chatlog](https://chatlog.gta.world/)
