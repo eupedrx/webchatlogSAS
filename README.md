@@ -1,4 +1,4 @@
-# 💾 Chat log web para o SAS
+# 💾 Chat log web para o [SAS](https://sas-rp.com/)
 
 Aplicativo Web desenvolvido com intuito de ajudar os jogadores a conseguirem manusear seus log's com mais facilidade.
 
