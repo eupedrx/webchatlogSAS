@@ -68,7 +68,7 @@ $(document).ready(function () {
       $("#font-label").text(
         "Tamanho (" + $.jStorage.get("lastFontSize") + "px):"
       ))
-    : ($.jStorage.set("lastFontSize", "12"),
+    : ($.jStorage.set("lastFontSize", "11"),
       $.jStorage.set("lastLineHeight", "0")),
     $("#decrease-fontsize").click(function () {
       (currentSize = parseInt($(".output").css("font-size"))),
@@ -100,9 +100,9 @@ $(document).ready(function () {
         $("#decrease-fontsize").removeClass("disabled");
     }),
     $("#reset-fontsize").click(function () {
-      $(".output").css({ "font-size": "12px", "line-height": "0px" }),
-        $("#font-label").text("Tamanho (12px):"),
-        $.jStorage.set("lastFontSize", "12"),
+      $(".output").css({ "font-size": "11px", "line-height": "0px" }),
+        $("#font-label").text("Tamanho (11px):"),
+        $.jStorage.set("lastFontSize", "11"),
         $.jStorage.set("lastLineHeight", "0");
     }),
     $("textarea").bind("input propertychange", function () {
